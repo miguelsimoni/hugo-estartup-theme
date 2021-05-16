@@ -150,18 +150,16 @@ social:
 
 Powered by [Disqus](https://disqus.com)
 
-```toml
-[params.disqus]
-    site = "your-disqus-short-name"
+```yaml
+disqusShortname: "yourdiscussshortname"
 ```
 
 Disable the comments system by leaving the `params.disqus.site` empty.
 
 ### Google Analytics
 
-```toml
-[params.google.analytics]
-    trackerID = "GA-000000000-0"
+```yaml
+googleAnalytics: "UA-123-45"
 ```
 
 Disable the Google Analytics by leaving `params.google.analytics.trackerID` empty.
