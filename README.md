@@ -157,7 +157,7 @@ Powered by [Disqus](https://disqus.com)
 disqusShortname: "yourdiscussshortname"
 ```
 
-Disable the comments system by leaving the `params.disqusShortname` empty.
+Disable the comments system by leaving `params.disqusShortname` empty.
 
 ### Google Analytics
 
