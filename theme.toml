@@ -1,0 +1,21 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/gohugoio/hugoThemes#themetoml for an example
+
+name = "Hugo eStartup Theme"
+license = "MIT"
+licenselink = "https://github.com/miguelsimoni/hugo-estartup-theme/blob/main/LICENSE"
+description = "eStartup - Bootstrap Landing Page Template by BootstrapMade"
+homepage = "https://miguelsimoni.github.io/hugo-estartup-theme"
+tags = ["blog","responsive","clean","light","google analytics","bootstrap","bootstrap 5","mobile","fast","customizable","multilingual","white","disqus","modern","landing page","font awesome","contact form","creative","company","single page","gallery","one page","hugo templates","pages","technical","hugo theme","product","business","onepage","fontawesome","seo","widgets","website","contact","ecommerce","single product","about us","features","get started","subscribe","price list","team","testimonials","startup"]
+features = ["blog","responsive","clean","light","google analytics","bootstrap","bootstrap 5","mobile","fast","customizable","multilingual","white","disqus","modern","landing page","font awesome","contact form","creative","company","single page","gallery","one page","hugo templates","pages","technical","hugo theme","product","business","onepage","fontawesome","seo","widgets","website","contact","ecommerce","single product","about us","features","get started","subscribe","price list","team","testimonials","startup"]
+min_version = "0.81.0"
+
+[author]
+  name = "Miguel Simoni"
+  homepage = "https://miguelsimoni.xyz/"
+
+# If porting an existing theme
+[original]
+  name = "eStartup"
+  homepage = "https://bootstrapmade.com/estartup-bootstrap-landing-page-template/"
+  repo = "https://bootstrapmade.com/estartup-bootstrap-landing-page-template/download/"

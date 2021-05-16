@@ -1,0 +1,47 @@
+<div id="home">
+
+  {{ partial "section/hero.html" . }}
+
+  {{ partial "section/getstarted.html" . }}
+
+{{ if .Site.Params.showAboutUs }}
+  {{ partial "section/about-us.html" . }}
+{{ end }}
+
+{{ if .Site.Params.showFeatures }}
+  {{ partial "section/features.html" . }}
+{{ end }}
+
+{{ if .Site.Params.showScreenshots }}
+  {{ partial "section/screenshots.html" . }}
+{{ end }}
+
+{{ if .Site.Params.showVideo }}
+  {{ partial "section/video.html" . }}
+{{ end }}
+
+{{ if .Site.Params.showTeam }}
+  {{ partial "section/team.html" . }}
+{{ end }}
+
+{{ if .Site.Params.showTestimonials }}
+  {{ partial "section/testimonials.html" . }}
+{{ end }}
+
+{{ if .Site.Params.showPricing }}
+  {{ partial "section/pricing.html" . }}
+{{ end }}
+
+{{ if .Site.Params.showBlog }}
+  {{ partial "section/blog.html" . }}
+{{ end }}
+
+{{ if .Site.Params.showNewsletter }}
+  {{ partial "section/newsletter.html" . }}
+{{ end }}
+
+{{ if .Site.Params.showContact }}
+  {{ partial "section/contact.html" . }}
+{{ end }}
+
+</div>

@@ -1,0 +1,30 @@
+<section id="team" class="padd-section text-center">
+  <div class="container" data-aos="fade-up">
+    <div class="section-title text-center">
+
+      <h2>{{ T "team_title" }}</h2>
+      <p class="separator">{{ T "team_description" }}</p>
+    </div>
+
+    <div class="row">
+
+      {{ range .Site.Data.team }}
+      <div class="col-md-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
+        <div class="team-block bottom">
+          <img src="{{ $.Site.BaseURL }}{{ .picture }}" class="img-responsive" alt="img">
+          <div class="team-content">
+            <ul class="list-unstyled">
+              <li><a href="https://www.facebook.com/{{ .facebook }}" target="_blank" rel="external"><i class="bi bi-facebook"></i></a></li>
+              <li><a href="https://www.twitter.com/{{ .twitter }}" target="_blank" rel="external"><i class="bi bi-twitter"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/{{ .linkedin }}" target="_blank" rel="external"><i class="bi bi-linkedin"></i></a></li>
+            </ul>
+            <span>{{ .job }}</span>
+            <h4>{{ .name }}</h4>
+          </div>
+        </div>
+      </div>        
+      {{ end }}
+
+    </div>
+  </div>
+</section>

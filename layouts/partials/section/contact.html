@@ -1,0 +1,75 @@
+<section id="contact" class="padd-section">
+
+  <div class="container" data-aos="fade-up">
+    <div class="section-title text-center">
+      <h2>{{ T "contact_title" }}</h2>
+      <p class="separator">{{ T "contact_description" }}</p>
+    </div>
+
+    <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="col-lg-3 col-md-4">
+
+        <div class="info">
+          <div>
+            <i class="bi bi-geo-alt"></i>
+            <p>{{ .Site.Params.contact.address1 }}<br>{{ .Site.Params.contact.address2 }}</p>
+          </div>
+
+          <div class="email">
+            <i class="bi bi-envelope"></i>
+            <p>{{ .Site.Params.contact.email }}</p>
+          </div>
+
+          <div>
+            <i class="bi bi-phone"></i>
+            <p>{{ .Site.Params.contact.phone }}</p>
+          </div>
+        </div>
+
+        <div class="social-links">
+          {{ if .Site.Params.social.twitter }}
+          <a href="https://www.twitter.com/{{ .Site.Params.social.twitter }}" class="twitter" target="_blank" rel="external"><i class="bi bi-twitter"></i></a>
+          {{ end }}
+          {{ if .Site.Params.social.facebook }}
+          <a href="https://www.facebook.com/{{ .Site.Params.social.facebook }}" class="facebook" target="_blank" rel="external"><i class="bi bi-facebook"></i></a>
+          {{ end }}
+          {{ if .Site.Params.social.instagram }}
+          <a href="https://www.instagram.com/{{ .Site.Params.social.instagram }}" class="instagram" target="_blank" rel="external"><i class="bi bi-instagram"></i></a>
+          {{ end }}
+          {{ if .Site.Params.social.linkedin }}
+          <a href="https://www.linkedin.com/in/{{ .Site.Params.social.linkedin }}" class="linkedin" target="_blank" rel="external"><i class="bi bi-linkedin"></i></a>
+          {{ end }}
+        </div>
+
+      </div>
+
+      <div class="col-lg-5 col-md-8">
+        <div class="form">
+          <form action="{{ .Site.Params.formspree.endpoint }}" method="post" role="form" class="php-email-form">
+            <div class="form-group">
+              <input type="text" class="form-control" name="_name" id="_name" placeholder='{{ T "name" }}' required>
+            </div>
+            <div class="form-group mt-3">
+              <input type="email" class="form-control" name="_replyto" id="_replyto" placeholder='{{ T "email" }}' required>
+            </div>
+            <div class="form-group mt-3">
+              <input type="text" class="form-control" name="_subject" id="_subject" placeholder='{{ T "subject" }}' required>
+            </div>
+            <div class="form-group mt-3">
+              <textarea class="form-control" name="message" rows="5" placeholder='{{ T "message" }}' required></textarea>
+            </div>
+            <div class="my-3">
+              <div class="loading">{{ T "loading" }}</div>
+              <div class="error-message"></div>
+              <div class="sent-message">{{ T "message_sent" }}</div>
+            </div>
+            <div class="text-center">
+              <button type="submit">{{ T "send_message" }}</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

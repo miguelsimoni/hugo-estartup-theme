@@ -1,0 +1,79 @@
+language: "Language"
+
+copyright: "Copyright {{ . }}. All rights reserved."
+
+word_count:
+  one: "1 word"
+  other: "{{ .Count }} words"
+
+reading_time:
+  one: "~One minute"
+  other: "~{{ .Count }} minutes"
+
+read_more: "Read more..."
+
+load_more: "Load more..."
+
+loading: "Loading..."
+
+go_back: "Go back"
+
+go_home: "Go Home"
+
+by: "By: "
+
+page_not_found: "This may not be the page you were looking for..."
+
+# Hero
+hero_title: "Welcome to eStartup"
+
+hero_description: "Elegant Bootstrap Template for Startups, Apps & more..."
+
+hero_action: "Get Started"
+
+# Screenshots
+screenshots_title: "Galería de la App"
+
+screenshots_description: "Integer cursus bibendum augue ac cursus."
+
+# Team
+team_title: "Team Members"
+
+team_description: "Integer Cursus Bibendum Augue Ac Cursus"
+
+# Pricing
+buy_now: "Buy Now"
+
+# Blog
+blog_title: "Latest Posts"
+
+blog_description: "Integer Cursus Bibendum Augue Ac Cursus."
+
+all_posts: "All Posts"
+
+# Newsletter
+subscribe: "Subscribe"
+
+email_address: "Email Address"
+
+# Contact
+contact_title: "Contact"
+
+contact_description: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque"
+
+name: "Your Name"
+
+email: "Your Email"
+
+subject: "Subject"
+
+message: "Message"
+
+send_message: "Send Message"
+
+message_sent: "Your message has been sent. Thank you!"
+
+# Footer
+footer_text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+
+designed_by: "Designed by"

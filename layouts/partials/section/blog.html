@@ -1,0 +1,29 @@
+<section id="blog" class="padd-sectio">
+
+  <div class="container" data-aos="fade-up">
+    <div class="section-title text-center">
+      {{ with .Site.GetPage "page" "blog" }}
+      <h2>{{ .Title }}</h2>
+      <p class="separator">{{ .Description }}</p>
+      {{ end }}
+      <a href='{{ "/post" | relLangURL }}'>{{ T "all_posts" }}</a>
+    </div>
+
+    <div class="row" data-aos="fade-up" data-aos-delay="100">
+      {{ range first 3 (where .Site.RegularPages "Section" "post") }}
+      <div class="col-md-6 col-lg-4">
+        <div class="block-blog text-left">
+          <a href="{{ .Permalink | absLangURL }}"><img src="{{ .Params.image }}" alt="img"></a>
+          <div class="content-blog">
+            <h4><a href="{{ .Permalink | absLangURL }}">{{ .Title }}</a></h4>
+            <h6>{{ .Summary | truncate 100 }}</h6>
+            <span>{{ .Date.Format (.Site.Params.dateFormat | default "Jan 2, 2006") }} | {{ T "reading_time" .ReadingTime }}</span>
+            <a class="float-end readmore" href="{{ .Permalink | absLangURL }}">{{ T "read_more" }}</a>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+
+  </div>
+</section>

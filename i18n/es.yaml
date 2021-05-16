@@ -1,0 +1,79 @@
+language: "Idioma"
+
+copyright: "Copyright {{ . }}. Todos los Derechos Reservados."
+
+word_count:
+  one: "1 palabra"
+  other: "{{ .Count }} palabras"
+
+reading_time:
+  one: "~Un minuto"
+  other: "~{{ .Count }} minutos"
+
+read_more: "Leer más..."
+
+load_more: "Cargar más..."
+
+loading: "Cargando..."
+
+go_back: "Volver"
+
+go_home: "Ir al Inicio"
+
+by: "Por: "
+
+page_not_found: "Puede que esta no sea la página que estabas buscando..."
+
+# Hero
+hero_title: "Bienvenido a eStartup"
+
+hero_description: "Elegante Plantilla Bootstrap para Startups, Aplicaciones y más..."
+
+hero_action: "Comienza"
+
+# Screenshots
+screenshots_title: "App Gallery"
+
+screenshots_description: "Integer cursus bibendum augue ac cursus."
+
+# Team
+team_title: "Miembros del Equipo"
+
+team_description: "Integer Cursus Bibendum Augue Ac Cursus"
+
+# Pricing
+buy_now: "Comprar Ahora"
+
+# Blog
+blog_title: "Artículos Recientes"
+
+blog_description: "Integer Cursus Bibendum Augue Ac Cursus."
+
+all_posts: "Todos los artículos"
+
+# Newsletter
+subscribe: "Subscribirse"
+
+email_address: "Dirección de Email"
+
+# Contact
+contact_title: "Contacto"
+
+contact_description: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque"
+
+name: "Tu nombre"
+
+email: "Tu email"
+
+subject: "Asunto"
+
+message: "Mensaje"
+
+send_message: "Enviar Mensaje"
+
+message_sent: "Tu mensaje ha sido enviado. ¡Gracias!"
+
+# Footer
+footer_text: "Lorem Ipsum es simplemente texto de relleno de la industria de la impresión y la composición tipográfica. Lorem Ipsum ha sido el texto de relleno estándar de la industria desde el siglo XVI."
+
+designed_by: "Diseñado por"

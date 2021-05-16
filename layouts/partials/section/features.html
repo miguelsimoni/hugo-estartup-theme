@@ -1,0 +1,25 @@
+<section id="features" class="padd-section text-center">
+  <div class="container" data-aos="fade-up">
+    {{ with .Site.GetPage "page" "features" }}
+    <div class="section-title text-center">
+      <h2>{{ .Title }}</h2>
+      <p class="separator">{{ .Description }}</p>
+    </div>
+    {{ end }}
+
+    <div class="row" data-aos="fade-up" data-aos-delay="100">
+      {{ range (where .Site.RegularPages "Section" "features") }}
+      <div class="col-md-6 col-lg-3">
+        <a href="{{ .Permalink }}">
+          <div class="feature-block">
+            <img src="{{ .Params.icon }}" alt="img">
+            <h4>{{ .Title }}</h4>
+            <p>{{ .Description }}</p>            
+          </div>
+        </a>
+      </div>
+      {{ end }}
+    </div>
+
+  </div>
+</section>

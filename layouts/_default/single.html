@@ -1,0 +1,88 @@
+{{ define "main" }}
+<article>
+  <div class="container">
+
+    <div class="row mt-5 mb-3">
+      <div class="col-md-8 offset-md-2 text-center text-uppercase">
+        <h1>{{ .Title }}</h1>
+      </div>
+    </div>
+
+    <div class="row mb-5">
+      <div class="col-md-8 offset-md-2 text-center">
+        <time datetime="{{ .Date }}">{{ .Date.Format (.Site.Params.dateFormat | default "Jan 2, 2006") }}</time>
+        |
+        <span id="readingtime">{{ T "reading_time" .ReadingTime }}</span>
+      </div>
+    </div>
+
+    <div class="row mb-5">
+      <div class="col-md-8 offset-md-2">
+        {{ .Content }}
+      </div>
+    </div>
+
+    <div class="row mb-5">
+      <div class="col-md-8 offset-md-2 text-end">
+        {{ if .Params.Author }}
+          {{ T "by" }} <em>{{ .Params.Author }}</em>
+        {{ else if .Site.Params.Author }}
+          {{ T "by" }} <em>{{ .Site.Params.Author }}</em>
+        {{ end }}
+      </div>
+    </div>
+
+  </div>
+</article>
+
+<aside id="meta">
+  <div class="container">
+
+    {{ with .Params.tags }}
+    <div id="tags" class="row mb-5">
+      <div class="col-md-8 offset-md-2 text-center">
+        {{ range . }}
+          <a href="{{ "/tags/" | absLangURL }}{{ . | urlize }}" rel="tag">
+            <span class="badge bg-dark">{{ . }}</span>
+          </a>
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+
+    <!-- Sharing options -->
+
+    <!-- Comments -->
+    <div class="row mb-5">
+      <div class="col-md-8 offset-md-2 text-center">
+        {{ template "_internal/disqus.html" . }}
+        {{ partial "disqus.html" . }}
+      </div>
+    </div>
+
+    <!-- Article navigation -->
+    <div class="row mb-5">
+      <div class="col-md-3 offset-md-2">
+        {{ with .PrevInSection }}
+        <a class="previous" href="{{ .Permalink | absLangURL }}" rel="prev">
+          <i class="bi bi-chevron-left"></i>
+          <span class="text-capitalize">{{ .Title }}</span>
+        </a>
+        {{ end }}
+      </div>
+      <div class="col-md-2 text-center">
+        <a href="{{ .Site.BaseURL | relLangURL }}">{{ T "go_home" }}</a>
+      </div>
+      <div class="col-md-3 text-end">
+        {{ with .NextInSection }}
+        <a class="next" href="{{ .Permalink | absLangURL }}" rel="next">
+          <span class="text-capitalize">{{ .Title }}</span>
+          <i class="bi bi-chevron-right"></i>
+        </a>
+        {{ end }}
+      </div>
+    </div>
+
+  </div>
+</aside>
+{{ end }}

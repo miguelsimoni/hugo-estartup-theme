@@ -1,0 +1,23 @@
+{{ with .Page }}
+  <div class="row mb-5 text-center">
+
+    <div class="col-md-8 offset-md-2 mb-3">
+      <h2>{{ .Title }}</h2>
+    </div>
+
+    <div class="col-md-8 offset-md-2 mb-3">
+      <small>
+        {{ .Date.Format (.Site.Params.dateFormat | default "Jan 2, 2006") }} | {{ T "reading_time" .ReadingTime }}
+      </small>
+    </div>
+
+    <div class="col-md-8 offset-md-2">
+      {{ .Summary }}
+    </div>
+
+    <div class="col-md-8 offset-md-2 text-end">
+      <a href="{{ .Permalink | absLangURL }}">{{ T "read_more" . }}</a>
+    </div>
+
+  </div>
+{{ end }}

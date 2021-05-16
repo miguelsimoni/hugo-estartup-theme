@@ -1,0 +1,83 @@
+- title:
+    en: "About us"
+    es: "Sobre nosotros"
+  links:
+  - label:
+      en: "About us"
+      es: "Sobre nosotros"
+    link: "#about-us"
+  - label:
+      en: "Features"
+      es: "Características"
+    link: "#features"
+  - label:
+      en: "Live Streaming"
+      es: "Transmisión en vivo"
+    link: "#video"
+  - label:
+      en: "Privacy Policy"
+      es: "Política de privacidad"
+    link: "#"
+
+- title:
+    en: "About us"
+    es: "Sobre nosotros"
+  links:
+  - label:
+      en: "About us"
+      es: "Sobre nosotros"
+    link: "#about-us"
+  - label:
+      en: "Features"
+      es: "Características"
+    link: "#features"
+  - label:
+      en: "Live Streaming"
+      es: "Transmisión en vivo"
+    link: "#video"
+  - label:
+      en: "Privacy Policy"
+      es: "Política de privacidad"
+    link: "#"
+
+- title:
+    en: "Support"
+    es: "Soporte"
+  links:
+  - label:
+      en: "FAQ"
+      es: "Preguntas frecuentes"
+    link: "#"
+  - label:
+      en: "Editor Help"
+      es: "Ayuda del editor"
+    link: "#"
+  - label:
+      en: "Contact us"
+      es: "Contactanos"
+    link: "#contact"
+  - label:
+      en: "Privacy Policy"
+      es: "Política de privacidad"
+    link: "#"
+
+- title:
+    en: "Support"
+    es: "Soporte"
+  links:
+  - label:
+      en: "FAQ"
+      es: "Preguntas frecuentes"
+    link: "#"
+  - label:
+      en: "Editor Help"
+      es: "Ayuda del editor"
+    link: "#"
+  - label:
+      en: "Contact us"
+      es: "Contactanos"
+    link: "#contact"
+  - label:
+      en: "Privacy Policy"
+      es: "Política de privacidad"
+    link: "#"

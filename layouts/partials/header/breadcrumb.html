@@ -1,0 +1,31 @@
+<section class="breadcrumbs">
+  <div class="container">
+
+    <div class="d-flex justify-content-between align-items-center">
+      <h2>{{ .Page.Title }}</h2>
+      <ol>
+        {{ template "breadcrumbnav" (dict "p1" . "p2" . "showCurrent" .Site.Params.breadcrumb.showCurrent) }}
+      </ol>
+    </div>
+
+  </div>
+</section>
+
+{{ define "breadcrumbnav" }}
+  {{ if .p1.Parent }}
+    {{ template "breadcrumbnav" (dict "p1" .p1.Parent "p2" .p2 ) }}
+  {{ else if not .p1.IsHome }}
+    {{ template "breadcrumbnav" (dict "p1" .p1.Site.Home "p2" .p2 ) }}
+  {{ end }}
+  {{ if eq .p1 .p2 }}
+    {{ if .showCurrent }}
+    <li class="active" aria-current="page">
+      {{ .p1.Title }}
+    </li>
+    {{ end }}
+  {{ else }}
+    <li>
+      <a href="{{ .p1.Permalink | absLangURL }}">{{ .p1.Title }}</a>
+    </li>
+  {{ end }}
+{{ end }}

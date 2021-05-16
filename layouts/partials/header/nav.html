@@ -1,0 +1,38 @@
+<!-- sidebar start -->
+<aside>
+  <nav id="navbar" class="navbar">
+    <ul>
+      {{ $currentPage := . }}
+      {{ range .Site.Menus.main }}
+        {{ if .HasChildren }}
+          <li class="nav-item">
+            <a class="nav-link scrollto {{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}" href="#">
+              {{ .Pre }} <span>{{ .Name }}</span>
+            </a>
+          </li>
+          <ul class="sub-menu">
+          {{ range .Children }}
+            <li class="nav-item">
+              <a class="nav-link scrollto {{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
+            </li>
+          {{ end }}
+          </ul>
+        {{ else }}
+          <li class="nav-item">
+            <a {{ if $currentPage.HasMenuCurrent "main" . }}class="nav-link scrollto active" aria-current="page"{{ else }}class="nav-link scrollto"{{ end }} href="{{ .URL }}">
+              {{ .Pre }} <span>{{ .Name }}</span>
+            </a>
+          </li>
+        {{ end }}
+      {{ end }}
+      {{ if .Site.Params.languagesMenuEnabled }}
+      <li class="nav-item dropdown">
+        <a class="nav-link scrollto" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <span>{{ T "language" . }}</span> <i class="bi bi-chevron-down"></i>
+        </a>
+        {{ partial "languages.html" . }}
+      </li>
+      {{ end }}
+    </ul>
+  </nav>
+</aside>

@@ -1,0 +1,43 @@
+<section id="testimonials" class="padd-section text-center">
+  <div class="container" data-aos="fade-up">
+    <div class="row justify-content-center">
+
+      <div class="col-md-8">
+
+        <div class="testimonials-content">
+          <div id="carousel-example-generic" class="carousel slide" data-bs-ride="carousel">
+
+            <div class="carousel-inner" role="listbox">
+
+              {{ range $index, $item := (where .Site.RegularPages "Section" "testimonials") }}
+
+              <div class="carousel-item {{ if eq $index 0 }}active{{ end }}">
+                <div class="top-top">
+
+                  <h2>{{ .Title }}</h2>
+                  <p>{{ .Content }}</p>
+                  <h4>{{ .Params.author }}<span>{{ .Params.job }}</span></h4>
+
+                </div>
+              </div>
+              {{ end }}
+
+            </div>
+
+            <div class="btm-btm">
+
+              <ul class="list-unstyled carousel-indicators">
+                {{ range $index, $item := (where .Site.RegularPages "Section" "testimonials") }}
+                <li data-bs-target="#carousel-example-generic" data-bs-slide-to="{{ $index }}" {{ if eq $index 0 }}class="active"{{ end }}></li>
+                {{ end }}
+              </ul>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

@@ -1,0 +1,23 @@
+<header id="header" class="header fixed-top d-flex align-items-center">
+  <div class="container d-flex align-items-center justify-content-between">
+
+    <div id="logo">
+      {{ if .Site.Params.brand.title }}
+      <h1><a href="{{ .Site.BaseURL | relLangURL }}">{{ .Site.Params.brand.title | safeHTML }}</a></h1>
+      {{ else if .Site.Params.brand.logo }}
+      <a href="{{ .Site.BaseURL | relLangURL }}">
+        <img src="{{ .Site.BaseURL }}{{ .Site.Params.brand.logo }}" alt="Logo" title="{{ .Site.Title }}" />
+      </a>
+      {{ else }}
+      <h1><a href="{{ .Site.BaseURL | relLangURL }}">{{ .Site.Title }}</a></h1>
+      {{ end }}
+    </div>
+
+    {{ partial "header/nav.html" . }}
+  </div>
+
+</header>
+
+{{ if not .Page.IsHome }}
+  {{ partial "header/breadcrumb.html" . }}
+{{ end }}

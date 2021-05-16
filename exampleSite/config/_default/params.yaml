@@ -1,0 +1,63 @@
+dateFormat: Jan 2, 2006
+author: Kimberly Tran
+
+brand:
+  title: "<span>e</span>Startup"
+  # logo: "img/logo.png"
+
+languagesMenuEnabled: true
+
+breadcrumb:
+  showCurrent: true
+
+pagination:
+  loadMore: true
+
+# OpenGraph
+title: "eStartup"
+description: "eStartup cool description"
+images: ["site-feature-image.jpg"]
+
+# Google Analytics
+googleAnalytics: "UA-123-45"
+
+# Disqus
+disqusShortname: "yourdiscussshortname"
+
+# Sections
+showAboutUs: true
+showFeatures: true
+showScreenshots: true
+showVideo: true
+showTeam: true
+showTestimonials: true
+showPricing: true
+showBlog: true
+showNewsletter: true
+showContact: true
+
+# Welcome
+store:
+  appStore: "#app-store"
+  googlePlay: "#google-play"
+  windows: "#windows"
+
+# Social Networks
+social:
+  facebook: estartup
+  twitter: estartup
+  instagram: estartup
+  linkedin: estartup
+
+# Contact
+contact:
+  address1: A108 Adam Street
+  address2: New York, NY 535022
+  email: info@example.com
+  phone: +1 5589 55488 555
+
+formspree:
+  endpoint: https://formspree.io/f/yourformcode
+
+# Video
+video: https://www.youtube.com/watch?v=e8crex4Ygwk&feature=emb_title
