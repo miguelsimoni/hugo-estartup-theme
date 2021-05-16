@@ -157,7 +157,7 @@ Powered by [Disqus](https://disqus.com)
 disqusShortname: "yourdiscussshortname"
 ```
 
-Disable the comments system by leaving the `params.disqus.site` empty.
+Disable the comments system by leaving the `params.disqusShortname` empty.
 
 ### Google Analytics
 
@@ -165,7 +165,7 @@ Disable the comments system by leaving the `params.disqus.site` empty.
 googleAnalytics: "UA-123-45"
 ```
 
-Disable the Google Analytics by leaving `params.google.analytics.trackerID` empty.
+Disable the Google Analytics by leaving `params.googleAnalytics` empty.
 
 ### More Settings!
 
