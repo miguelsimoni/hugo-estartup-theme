@@ -172,7 +172,7 @@ See the whole configuration in the [config/_default/](https://github.com/miguels
 
 In order to see your site in action, you can run Hugo's built-in local server.
 
-```
+```bash
 $ cd exampleSite
 $ hugo server -t ../..
 ```
