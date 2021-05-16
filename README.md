@@ -38,7 +38,9 @@ More info: [hugo setup guide](https://gohugo.io/overview/installing/)
 
 [Example Site](https://github.com/miguelsimoni/hugo-estartup-theme/tree/main/exampleSite)
 
-[config.toml](https://github.com/miguelsimoni/hugo-estartup-theme/tree/main/exampleSite/config.toml)
+[config.toml](https://github.com/miguelsimoni/hugo-estartup-theme/blob/main/exampleSite/config/_default/config.yaml)
+
+[params.toml](https://github.com/miguelsimoni/hugo-estartup-theme/blob/main/exampleSite/config/_default/params.yaml)
 
 ### Sections
 
@@ -144,8 +146,6 @@ social:
   linkedin: estartup
 ```
 
-See the whole configuration in the [config.toml](https://github.com/miguelsimoni/hugo-estartup-theme/tree/main/exampleSite/config.toml) file.
-
 ### Comments
 
 Powered by [Disqus](https://disqus.com)
@@ -165,6 +165,10 @@ Disable the comments system by leaving the `params.disqus.site` empty.
 ```
 
 Disable the Google Analytics by leaving `params.google.analytics.trackerID` empty.
+
+### More Settings!
+
+See the whole configuration in the [config/_default/](https://github.com/miguelsimoni/hugo-estartup-theme/blob/main/exampleSite/config/_default/) folder.
 
 ### Almost there...
 
