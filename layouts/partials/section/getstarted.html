@@ -17,7 +17,7 @@
       {{ range (where .Site.RegularPages "Section" "getstarted") }}
       <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="100">
         <div class="feature-block">
-          <img src="{{ .Params.icon }}" alt="img">
+          <img src="{{ .Params.icon | relURL }}" alt="img">
           <h4>{{ .Title }}</h4>
           <p>{{ .Description }}</p>
           <a href="{{ .Permalink }}">{{ T "read_more" }}</a>

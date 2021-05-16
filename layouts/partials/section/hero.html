@@ -2,14 +2,14 @@
   <div class="hero-container" data-aos="fade-in">
     <h1>{{ T "hero_title" | default "Welcome to eStartup" }}</h1>
     <h2>{{ T "hero_description" | default "Elegant Bootstrap Template for Startups, Apps & more..." }}</h2>
-    <img src="img/hero-img.png" alt="Hero Imgs" data-aos="zoom-out" data-aos-delay="100">
+    <img src="{{ .Site.Params.hero.image | relURL }}" alt="Hero Imgs" data-aos="zoom-out" data-aos-delay="100">
     <a href="#get-started" class="btn-get-started scrollto">
       {{ T "hero_action" | default "Get Started" }}
     </a>
     <div class="btns">
-      <a href="{{ .Site.Params.store.appStore }}"><i class="fab fa-apple fa-3x"></i> App Store</a>
-      <a href="{{ .Site.Params.store.googlePlay }}"><i class="fab fa-google-play fa-3x"></i> Google Play</a>
-      <a href="{{ .Site.Params.store.windows }}"><i class="fab fa-windows fa-3x"></i> Windows</a>
+      <a href="{{ .Site.Params.hero.store.appStore }}"><i class="fab fa-apple fa-3x"></i> App Store</a>
+      <a href="{{ .Site.Params.hero.store.googlePlay }}"><i class="fab fa-google-play fa-3x"></i> Google Play</a>
+      <a href="{{ .Site.Params.hero.store.windows }}"><i class="fab fa-windows fa-3x"></i> Windows</a>
     </div>
   </div>
 </section>

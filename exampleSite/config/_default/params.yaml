@@ -36,11 +36,13 @@ showBlog: true
 showNewsletter: true
 showContact: true
 
-# Welcome
-store:
-  appStore: "#app-store"
-  googlePlay: "#google-play"
-  windows: "#windows"
+# Hero / Welcome
+hero:
+  image: img/hero-img.png
+  store:
+    appStore: "#app-store"
+    googlePlay: "#google-play"
+    windows: "#windows"
 
 # Social Networks
 social:

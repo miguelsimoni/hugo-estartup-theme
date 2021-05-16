@@ -9,7 +9,7 @@
     <div class="screens-slider swiper-container">
       <div class="swiper-wrapper align-items-center">
         {{ range .Site.Data.screenshots }}
-        <div class="swiper-slide"><img src="{{ . }}" class="img-fluid" alt=""></div>
+        <div class="swiper-slide"><img src="{{ . | relURL }}" class="img-fluid" alt=""></div>
         {{ end }}
       </div>
       <div class="swiper-pagination"></div>

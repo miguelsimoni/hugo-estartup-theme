@@ -16,7 +16,7 @@
       <div id="loadMore" class="row mb-5">
         <div class="col text-center">
           <button type="button" class="btn btn-dark"
-                  onclick="loadMoreHandler({{ .RelPermalink | relLangURL }},{{ add 1 $paginator.PageNumber }})">
+                  onclick="loadMoreHandler({{ .Permalink }},{{ add 1 $paginator.PageNumber }})">
             <span>{{ T "load_more" }}</span>
             <span class="visually-hidden">{{ T "loading" }}</span>
             <span class="spinner-border spinner-border-sm visually-hidden" role="status" aria-hidden="true"></span>
