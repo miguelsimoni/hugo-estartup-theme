@@ -15,7 +15,7 @@ cd hugo-estartup-site
 
 1. Clone the repository of the eStartup theme from [here](https://github.com/miguelsimoni/hugo-estartup-theme).
 
-2. Run Hugo (the theme is already selected in the [config.toml](https://github.com/miguelsimoni/hugo-estartup-site/blob/main/config.toml) file):
+2. Run Hugo (the theme is already selected in the [config.toml](https://github.com/miguelsimoni/hugo-estartup-theme/blob/main/exampleSite/config/_default/config.yaml) file):
 
 ```bash
 hugo server
