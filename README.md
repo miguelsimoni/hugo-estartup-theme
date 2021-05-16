@@ -15,13 +15,16 @@
 
 ### Original Template Info
 
-**Description:** eStartup - Bootstrap Landing Page Template
-**Designer:** BootstrapMade
-**Template Version:** 4.2.0
-**Bootstrap Version:** 5.0.0
-**Last Updated:** May 10, 2021
-**Created:** Aug 19, 2018
-**License:** [Licensing information](https://bootstrapmade.com/license/)
+|||
+|-|-|
+|**Name** | eStartup |
+|**Description** | eStartup - Bootstrap Landing Page Template |
+|**Designer** | BootstrapMade |
+|**Template Version** | 4.2.0 |
+|**Bootstrap Version** | 5.0.0 |
+|**Last Updated** | May 10, 2021 |
+|**Created** | Aug 19, 2018 |
+|**License** | [Licensing information](https://bootstrapmade.com/license/) |
 
 ## Installation
 
@@ -189,8 +192,7 @@ Now enter [`http://localhost:1313/`](http://localhost:1313/) in the address bar 
 - Found a bug?
 - Got an idea for a new feature?
 
-Let me know it using the [issue tracker](https://github.com/miguelsimoni/hugo-estartup-theme/issues).
-Or make it directly: [pull request](https://github.com/miguelsimoni/hugo-estartup-theme/pulls).
+Let me know it using the [issue tracker](https://github.com/miguelsimoni/hugo-estartup-theme/issues) or make it directly with a [pull request](https://github.com/miguelsimoni/hugo-estartup-theme/pulls).
 
 ## License
 
