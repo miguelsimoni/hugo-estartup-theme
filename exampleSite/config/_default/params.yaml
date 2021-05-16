@@ -46,10 +46,10 @@ hero:
 
 # Social Networks
 social:
-  facebook: estartup
-  twitter: estartup
-  instagram: estartup
-  linkedin: estartup
+  facebook: "#"
+  twitter: "#"
+  instagram: "#"
+  linkedin: "#"
 
 # Contact
 contact:

@@ -1,27 +1,27 @@
 - name: David
   job: developer
   picture: img/team/1.jpg
-  facebook: dave
-  twitter: dave
-  linkedin: dave
+  facebook: "#"
+  twitter: "#"
+  linkedin: "#"
 
 - name: Kimberly
   job: manager
   picture: img/team/2.jpg
-  facebook: kim
-  twitter: kim
-  linkedin: kim
+  facebook: "#"
+  twitter: "#"
+  linkedin: "#"
 
 - name: Luke
   job: designer
   picture: img/team/3.jpg
-  facebook: luke
-  twitter: luke
-  linkedin: luke
+  facebook: "#"
+  twitter: "#"
+  linkedin: "#"
 
 - name: Natasha
   job: analyst
   picture: img/team/4.jpg
-  facebook: nat
-  twitter: nat
-  linkedin: nat
+  facebook: "#"
+  twitter: "#"
+  linkedin: "#"
