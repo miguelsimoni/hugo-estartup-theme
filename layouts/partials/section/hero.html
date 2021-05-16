@@ -2,7 +2,7 @@
   <div class="hero-container" data-aos="fade-in">
     <h1>{{ T "hero_title" | default "Welcome to eStartup" }}</h1>
     <h2>{{ T "hero_description" | default "Elegant Bootstrap Template for Startups, Apps & more..." }}</h2>
-    <img src="{{ .Site.Params.hero.image | relURL }}" alt="Hero Imgs" data-aos="zoom-out" data-aos-delay="100">
+    <img src='{{ .Site.Params.hero.image | default "img/hero-img.png" | relURL }}' alt="Hero Imgs" data-aos="zoom-out" data-aos-delay="100">
     <a href="#get-started" class="btn-get-started scrollto">
       {{ T "hero_action" | default "Get Started" }}
     </a>
