@@ -1,0 +1,192 @@
+baseURL: https://example.com/
+title: eStartup
+copyright: © Copyright eStartup. All rights reserved.
+paginate: 3
+languageCode: en
+defaultContentLanguage: en
+enableInlineShortcodes: true
+# prevent build failures when using Hugo's Instagram shortcode due to deprecated Instagram API.
+# See https://github.com/gohugoio/hugo/issues/7228#issuecomment-714490456
+ignoreErrors: ["error-remote-getjson"]
+theme: hugo-estartup-theme
+
+# sectionPagesMenu: main
+
+enableRobotsTXT: true
+
+taxonomies:
+  category: categories
+  tag: tags
+  series: series
+
+# OpenGraph
+title: "eStartup"
+description: "eStartup cool description"
+images: ["site-feature-image.jpg"]
+
+# Google Analytics
+googleAnalytics: "UA-123-45"
+
+# Disqus
+disqusShortname: "yourdiscussshortname"
+
+# Parameters
+params:
+  dateFormat: Jan 2, 2006
+  author: Kimberly Tran
+
+  brand:
+    title: "<span>e</span>Startup"
+    # logo: "img/logo.png"
+
+  languagesMenuEnabled: true
+
+  breadcrumb:
+    showCurrent: true
+
+  pagination:
+    loadMore: true
+
+  # Sections
+  showAboutUs: true
+  showFeatures: true
+  showScreenshots: true
+  showVideo: true
+  showTeam: true
+  showTestimonials: true
+  showPricing: true
+  showBlog: true
+  showNewsletter: true
+  showContact: true
+
+  # Section: Hero / Welcome
+  hero:
+    image: img/hero-img.png
+    store:
+      appStore: "#app-store"
+      googlePlay: "#google-play"
+      windows: "#windows"
+
+  # Social Networks
+  social:
+    facebook: "#"
+    twitter: "#"
+    instagram: "#"
+    linkedin: "#"
+
+  # Section: Contact
+  contact:
+    address1: A108 Adam Street
+    address2: New York, NY 535022
+    email: info@example.com
+    phone: +1 5589 55488 555
+
+  formspree:
+    endpoint: https://formspree.io/f/yourformcode
+
+  # Section: Video
+  video: https://www.youtube.com/watch?v=e8crex4Ygwk&feature=emb_title
+
+# Menu
+languages:
+  en:
+    languageName: English
+    weight: 10
+    menu:
+      main:
+      - identifier: home
+        name: Home
+        url: "#hero"
+        weight: 10
+      - identifier: about
+        name: About
+        url: "#about-us"
+        weight: 20
+      - identifier: features
+        name: Features
+        url: "#features"
+        weight: 30
+      - identifier: screenshots
+        name: Screenshots
+        url: "#screenshots"
+        weight: 40
+      - identifier: team
+        name: Team
+        url: "#team"
+        weight: 50
+      - identifier: pricing
+        name: Pricing
+        url: "#pricing"
+        weight: 60
+      - identifier: blog
+        name: Blog
+        url: "#blog"
+        weight: 70
+      - identifier: contact
+        name: Contact
+        url: "#contact"
+        weight: 80
+    params:
+      navigation:
+        help: Help
+  es:
+    languageName: Español
+    weight: 20
+    menu:
+      main:
+      - identifier: home
+        name: Inicio
+        url: "#hero"
+        weight: 10
+      - identifier: about
+        name: Acerca
+        url: "#about"
+        weight: 20
+      - identifier: features
+        name: Características
+        url: "#features"
+        weight: 30
+      - identifier: screenshots
+        name: Capturas
+        url: "#screenshots"
+        weight: 40
+      - identifier: team
+        name: Equipo
+        url: "#team"
+        weight: 50
+      - identifier: pricing
+        name: Precios
+        url: "#pricing"
+        weight: 60
+      - identifier: blog
+        name: Blog
+        url: "#blog"
+        weight: 70
+      - identifier: contact
+        name: Contacto
+        url: "#contact"
+        weight: 80
+    params:
+      navigation:
+        help: Ayuda
+
+privacy:
+  vimeo:
+    disabled: false
+    simple: true
+  twitter:
+    disabled: false
+    enableDNT: true
+    simple: true
+  instagram:
+    disabled: false
+    simple: true
+  youtube:
+    disabled: false
+    privacyEnhanced: true
+
+services:
+  instagram:
+    disableInlineCSS: true
+  twitter:
+    disableInlineCSS: true
