@@ -13,6 +13,9 @@
 
 ![screenshot](https://raw.githubusercontent.com/miguelsimoni/hugo-estartup-theme/main/images/tn.png)
 
+[Live Demo](https://miguelsimoni.github.io/hugo-estartup-site/)
+
+
 ### Original Template Info
 
 |||
@@ -26,6 +29,7 @@
 |**Created** | Aug 19, 2018 |
 |**License** | [Licensing information](https://bootstrapmade.com/license/) |
 
+
 ## Installation
 
 ```
@@ -35,11 +39,8 @@ $ git submodule add https://github.com/miguelsimoni/hugo-estartup-theme.git them
 
 More info: [hugo setup guide](https://gohugo.io/overview/installing/)
 
+
 ## Configuration
-
-[Live Demo](https://miguelsimoni.github.io/hugo-estartup-site/)
-
-[Example Site](https://github.com/miguelsimoni/hugo-estartup-theme/tree/main/exampleSite)
 
 [config.yaml](https://github.com/miguelsimoni/hugo-estartup-theme/blob/main/exampleSite/config.yaml)
 
@@ -170,7 +171,7 @@ See the whole configuration in the [config.yaml](https://github.com/miguelsimoni
 
 ## Example Site
 
-The `exampleSite` folder is based on [Hugo Basic Example](https://github.com/gohugoio/hugoBasicExample) and offers an example site for  this theme.
+The [`exampleSite`](https://github.com/miguelsimoni/hugo-estartup-theme/tree/main/exampleSite) folder is based on [Hugo Basic Example](https://github.com/gohugoio/hugoBasicExample) and offers an example site for this theme.
 
 The `exampleSite/content/` folder contains the following:
 
@@ -181,11 +182,12 @@ The `exampleSite/content/` folder contains the following:
 - A section called `/pricing/` with sample content for Pricing section.
 - A section called `/testimonials/` with sample content for Testimonials section.
 
-The `/data/` folder contains the following:
+The `exampleSite/data/` folder contains the following:
 
 - A file called `screenshots.yaml` with sample content for Screenshots section.
 - A file called `team.yaml` with sample content for Team section.
 - A file called `footer.yaml` with sample content for the page footer.
+
 
 ## Almost there...
 
@@ -198,10 +200,12 @@ $ hugo server -t ../..
 
 Now enter [`http://localhost:1313/`](http://localhost:1313/) in the address bar of your browser.
 
+
 ## Deployment
 
 - [Hosting on GitHub](https://gohugo.io/hosting-and-deployment/hosting-on-github/)
 - [More hosting and deployment options](https://gohugo.io/hosting-and-deployment/)
+
 
 ## Contributing
 
@@ -210,9 +214,11 @@ Now enter [`http://localhost:1313/`](http://localhost:1313/) in the address bar 
 
 Let me know it using the [issue tracker](https://github.com/miguelsimoni/hugo-estartup-theme/issues) or make it directly with a [pull request](https://github.com/miguelsimoni/hugo-estartup-theme/pulls).
 
+
 ## License
 
 This port is released under the MIT License. Check the [original theme license](https://bootstrapmade.com/license/) for additional licensing information.
+
 
 ## Thanks
 
