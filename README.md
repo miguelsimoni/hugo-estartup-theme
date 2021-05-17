@@ -78,13 +78,13 @@ breadcrumb:
   showCurrent: true
 ```
 
-### Load more items
+### Pagination Loader
 
-You can enable or disable the Load More button in the list pages from `config.yaml`:
+You can enable or disable the pagination loader (Load More button) in the list pages from `config.yaml`:
 
 ```yaml
 pagination:
-  loadMore: true
+  loader: true
 ```
 
 Disabling it will show the standard pagination widget.
