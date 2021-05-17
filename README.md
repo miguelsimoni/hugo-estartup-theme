@@ -41,13 +41,11 @@ More info: [hugo setup guide](https://gohugo.io/overview/installing/)
 
 [Example Site](https://github.com/miguelsimoni/hugo-estartup-theme/tree/main/exampleSite)
 
-[config.toml](https://github.com/miguelsimoni/hugo-estartup-theme/blob/main/exampleSite/config/_default/config.yaml)
-
-[params.toml](https://github.com/miguelsimoni/hugo-estartup-theme/blob/main/exampleSite/config/_default/params.yaml)
+[config.yaml](https://github.com/miguelsimoni/hugo-estartup-theme/blob/main/exampleSite/config.yaml)
 
 ### Sections
 
-You can show or hide each home page section from `config/_default/params.yaml`:
+You can show or hide each home page section from `config.yaml`:
 
 ```yaml
 showAboutUs: true
@@ -64,7 +62,7 @@ showContact: true
 
 ### Multilingual
 
-You can show or hide the Languages dropdown menu from `config/_default/params.yaml`:
+You can show or hide the Languages dropdown menu from `config.yaml`:
 
 ```yaml
 languagesMenuEnabled: true
@@ -72,7 +70,7 @@ languagesMenuEnabled: true
 
 ### Breadcrumb
 
-You can show or hide the current page in the breadcrumb from `config/_default/params.yaml`:
+You can show or hide the current page in the breadcrumb from `config.yaml`:
 
 ```yaml
 breadcrumb:
@@ -81,7 +79,7 @@ breadcrumb:
 
 ### Load more items
 
-You can enable or disable the Load More button in the list pages from `config/_default/params.yaml`:
+You can enable or disable the Load More button in the list pages from `config.yaml`:
 
 ```yaml
 pagination:
@@ -92,7 +90,7 @@ Disabling it will show the standard pagination widget.
 
 ### Contact
 
-You can enable de Contact form to let visitors send you messages using [Formspree](https://formspree.io/) just adding your form code in `config/_default/params.yaml`:
+You can enable de Contact form to let visitors send you messages using [Formspree](https://formspree.io/) just adding your form code in `config.yaml`:
 
 ```yaml
 formspree:
@@ -106,7 +104,6 @@ You can configure the footer content from `i18n/en.yaml` (or the correspondant l
 - en.yaml
 
 ```yaml
-# Footer
 footer_text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
 
 designed_by: "Designed by"
@@ -138,10 +135,9 @@ designed_by: "Designed by"
 
 ### Social Networks
 
-You can add the usernames for the current supported social networks in `config/_default/params.yaml`:
+You can add the usernames for the current supported social networks in `config.yaml`:
 
 ```yaml
-# Social Networks
 social:
   facebook: estartup
   twitter: estartup
@@ -169,9 +165,29 @@ Disable the Google Analytics by leaving `params.googleAnalytics` empty.
 
 ### More Settings!
 
-See the whole configuration in the [config/_default/](https://github.com/miguelsimoni/hugo-estartup-theme/blob/main/exampleSite/config/_default/) folder.
+See the whole configuration in the [config.yaml](https://github.com/miguelsimoni/hugo-estartup-theme/blob/main/exampleSite/config.yaml) file.
 
-### Almost there...
+
+## Example Site
+
+The `exampleSite` folder is based on [Hugo Basic Example](https://github.com/gohugoio/hugoBasicExample) and offers an example site for  this theme.
+
+The `exampleSite/content/` folder contains the following:
+
+- A section called `/post/` with sample markdown content.
+- An `about.md` that is intended to provide the `/about/` page for a theme demo.
+- A section called `/getstarted/` with sample content for Get Started section.
+- A section called `/features/` with sample content for Features section.
+- A section called `/pricing/` with sample content for Pricing section.
+- A section called `/testimonials/` with sample content for Testimonials section.
+
+The `/data/` folder contains the following:
+
+- A file called `screenshots.yaml` with sample content for Screenshots section.
+- A file called `team.yaml` with sample content for Team section.
+- A file called `footer.yaml` with sample content for the page footer.
+
+## Almost there...
 
 In order to see your site in action, you can run Hugo's built-in local server.
 
